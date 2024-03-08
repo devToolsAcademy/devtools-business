@@ -6,7 +6,7 @@ import css from "styled-jsx/css";
 
 export default function CardServices() {
   return (
-    <Card className="py-4 bg-gray-950">
+    <Card className="py-4 bg-[var(--bluePrimary)] m-5">
       <CardBody className="overflow-visible py-2">
         <Image
           isZoomed
