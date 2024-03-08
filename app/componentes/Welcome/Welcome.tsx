@@ -1,10 +1,11 @@
-import { Isotipo } from "../assessment/Isotipo";
 import ArrowDown from "../assessment/icons/ArrowDown";
 import styles from "./Welcome.module.css";
+
 export const Welcome = () => {
   return (
     <section
-      className={`bg-[var(--bluePrimary)] md:flex md:justify-center  ${styles["container-welcome"]}`}
+      className={`bg-[var(--bluePrimary)] md:flex md:justify-center
+      ${styles["container-welcome"]}`}
     >
       <div className="md:w-[60%] md:flex items-center">
         <img
@@ -30,7 +31,7 @@ export const Welcome = () => {
           </p>
         </div>
       </div>
-      <ArrowDown className="absolute self-end w-[100vh]  hidden md:block mb-4 text-[var(--greenDevtools)]" />
+      <ArrowDown className="absolute self-end w-[100%] transition-all hover:cursor-pointer float-right animate-bounce hidden md:block mb-4 text-[var(--greenDevtools)]" />
     </section>
   );
 };
