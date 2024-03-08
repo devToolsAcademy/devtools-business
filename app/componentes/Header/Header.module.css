@@ -1,0 +1,30 @@
+.content-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1rem;
+}
+
+.items-menu {
+  color: var(--blueSecondary);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.items-menu:hover {
+  color: var(--greenDevtools);
+}
+
+.button-header {
+  color: var(--white);
+  font-weight: bold;
+  transition: color 0.3s ease;
+  background-color: var(--greenDevtools);
+}
+.button-header:hover {
+  color: var(--blueSecondary);
+  font-weight: bold;
+  /* transition: color 0.3s ease; */
+  background-color: transparent;
+  border: 3px solid var(--greenDevtools);
+}
