@@ -1,3 +1,4 @@
+import { About } from "./componentes/About/About";
 import Menu from "./componentes/Header/Menu";
 import { Services } from "./componentes/Services/Services";
 import { Welcome } from "./componentes/Welcome/Welcome";
@@ -10,6 +11,7 @@ export default function Home() {
       <Welcome />
       <div className={styles["container-page"]}>
         <Services />
+        <About />
       </div>
     </>
   );
