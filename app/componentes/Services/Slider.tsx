@@ -40,7 +40,7 @@ export const Slider = () => {
       navigation
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
-      className="md:w-[40rem] w-[20rem] lg:w-[55rem] "
+      className="md:w-[40rem] w-[20rem] lg:w-[65rem] "
     >
       <SwiperSlide>
         <CardServices />
