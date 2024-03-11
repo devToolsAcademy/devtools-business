@@ -6,7 +6,7 @@ import { Slider } from "./Slider";
 
 export const Services = () => {
   return (
-    <div>
+    <div className="mt-10">
       <div className="w-[100%] flex flex-col justify-center">
         <h2 className="text-[var(--greenDevtools)] font-bold text-2xl self-center mt-8">
           Nuestros Servicios
