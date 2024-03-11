@@ -30,10 +30,10 @@ export const Welcome = () => {
             sint consequuntur aliquam impedit placeat dolorum et repellat
             repellendus nobis optio! Mollitia, fugiat!
           </p>
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center lg:justify-start">
           <Button
             as={Link}
-            className="text-[var(--bluePrimary)] bg-[var(--greenDevtools)] font-bold mb-10 md:ml-20 md:mb-20"
+            className="text-[var(--bluePrimary)] bg-[var(--greenDevtools)] font-bold mb-10 md:ml-20 md:mb-20 lg:ml-0 lg:mt-5"
             href="#"
             variant="flat"
           >
