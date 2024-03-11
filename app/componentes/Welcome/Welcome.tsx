@@ -24,7 +24,7 @@ export const Welcome = () => {
               Academy
             </span>
           </div>
-          <p className="p-[8px] text-[var(--white)] pb-8 pb-[28px] mt-5 mb-5 md:mb-0 pb-[15px]">
+          <p className="p-[8px] text-[var(--white)] pb-[28px] mt-5 mb-5 md:mb-0 md:pb-[15px]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
             commodi voluptatum dolorem quam, maiores quaerat deleniti minima
             sint consequuntur aliquam impedit placeat dolorum et repellat
@@ -33,7 +33,7 @@ export const Welcome = () => {
           <div className="flex justify-center items-center">
           <Button
             as={Link}
-            className="text-[var(--bluePrimary)] bg-[var(--greenDevtools)] font-bold mb-10 md:ml-20 mb-20"
+            className="text-[var(--bluePrimary)] bg-[var(--greenDevtools)] font-bold mb-10 md:ml-20 md:mb-20"
             href="#"
             variant="flat"
           >
