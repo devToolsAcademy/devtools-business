@@ -14,7 +14,6 @@ export const Welcome = () => {
           alt=""
           className="w-[200px] h-[200px] rounded-full hidden md:block md:mr-6"
         />
-
         <div>
           <div className="flex flex-col justify-center w-full items-center">
             <h1 className="text-[50px]  text-[var(--greenDevtools)] font-bold w-auto mt-20 md:mt-1">
