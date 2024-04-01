@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, {useState} from "react";
 import {
   Navbar,
   NavbarBrand,
@@ -12,8 +12,8 @@ import {
   Button,
 } from "@nextui-org/react";
 
-export default function Menu() {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+export default function Menu({showStartSesion=false}) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = ["Inicio", "Sobre nosotros", "Nuestros servicios"];
 
@@ -43,7 +43,7 @@ export default function Menu() {
         <NavbarItem>
           <Link
             className="text-[var(--bluePrimary)] font-bold hover:text-[var(--greenDevtools)]"
-            href="#"
+            href="#home-aboutus"
             aria-current="page"
           >
             Sobre nosotros
@@ -52,13 +52,13 @@ export default function Menu() {
         <NavbarItem>
           <Link
             className="text-[var(--bluePrimary)] font-bold hover:text-[var(--greenDevtools)]"
-            href="#"
+            href="#home-services"
           >
             Nuestros servicios
           </Link>
         </NavbarItem>
       </NavbarContent>
-      <NavbarContent justify="end">
+      {showStartSesion && <NavbarContent justify="end">
         <NavbarItem>
           <Button
             as={Link}
@@ -70,6 +70,7 @@ export default function Menu() {
           </Button>
         </NavbarItem>
       </NavbarContent>
+      }
       <NavbarMenu>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>

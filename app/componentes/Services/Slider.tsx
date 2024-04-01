@@ -12,7 +12,26 @@ import { useEffect, useState } from "react";
 
 export const Slider = () => {
   const [slidesPerView, setSlidesPerView] = useState(1);
-
+  const services = [
+    {
+      image: "",
+      title: "DEISEÑO DE PÁGINAS WEB",
+      description: "Transformamos ideas en experiencias digitales cautivadoras en desarrollo personalizados para llevar tu presencia al siguiente nivel.",
+      action: ""
+    },
+    {
+      image: "",
+      title: "MARKETING DIGITAL",
+      description: "Ayudamos a impulsar tu marca hacia el éxito digital en redes sociales hasta campañas publicitarias, maximizamos tu alcance y crecimiento en línea.",
+      action: ""
+    },
+    {
+      image: "",
+      title: "DESARROLLO WEB",
+      description: "Potenciamos la presencia digital de tu empresa con soluciones web personalizadas con  aplicaciones web a medida, diseñadas para impulsar tu negocio hacia el éxito en línea.",
+      action: ""
+    }
+  ]
   useEffect(() => {
     const handleResize = () => {
       const windowWidth = window.innerWidth;
@@ -42,27 +61,11 @@ export const Slider = () => {
       scrollbar={{ draggable: true }}
       className="md:w-[40rem] w-[20rem] lg:w-[65rem] "
     >
-      <SwiperSlide>
-        <CardServices />
-      </SwiperSlide>
-      <SwiperSlide>
-        <CardServices />
-      </SwiperSlide>
-      <SwiperSlide>
-        <CardServices />
-      </SwiperSlide>
-      <SwiperSlide>
-        <CardServices />
-      </SwiperSlide>
-      <SwiperSlide>
-        <CardServices />
-      </SwiperSlide>
-      <SwiperSlide>
-        <CardServices />
-      </SwiperSlide>
-      <SwiperSlide>
-        <CardServices />
-      </SwiperSlide>
+      {services?.map((service) => (
+        <SwiperSlide>
+          <CardServices title={service.title} description={service.description} />
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 };

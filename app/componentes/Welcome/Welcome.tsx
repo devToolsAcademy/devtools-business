@@ -24,10 +24,7 @@ export const Welcome = () => {
             </span>
           </div>
           <p className="p-[8px] text-[var(--white)] pb-8 ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            commodi voluptatum dolorem quam, maiores quaerat deleniti minima
-            sint consequuntur aliquam impedit placeat dolorum et repellat
-            repellendus nobis optio! Mollitia, fugiat!
+          Somos un equipo de expertos en desarrollo web y marketing digital.¡Déjanos llevar tu presencia en línea al siguiente nivel!
           </p>
         </div>
       </div>

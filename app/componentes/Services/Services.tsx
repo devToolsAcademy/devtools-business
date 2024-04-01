@@ -6,7 +6,7 @@ import { Slider } from "./Slider";
 
 export const Services = () => {
   return (
-    <div>
+    <section id="home-services">
       <div className="w-[100%] flex flex-col justify-center">
         <h2 className="text-[var(--greenDevtools)] font-bold text-2xl self-center mt-8">
           Nuestros Servicios
@@ -22,6 +22,6 @@ export const Services = () => {
         </div>
         {/* <Slider2 /> */}
       </div>
-    </div>
+    </section>
   );
 };

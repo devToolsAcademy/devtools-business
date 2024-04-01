@@ -3,8 +3,12 @@ import { Card, CardHeader, CardBody } from "@nextui-org/card";
 import { Image } from "@nextui-org/image";
 import { Button } from "@nextui-org/button";
 import css from "styled-jsx/css";
+interface CardServicesInterface {
+  title: string,
+  description: string
+}
 
-export default function CardServices() {
+export default function CardServices({title, description}:CardServicesInterface) {
   return (
     <Card className="py-4 bg-[var(--bluePrimary)] m-5 w-[18rem]">
       <CardBody className="overflow-visible py-2  ">
@@ -17,9 +21,9 @@ export default function CardServices() {
         />
         <div className="pb-0 pt-2 px-4 flex-col items-start">
           <h4 className="font-bold text-large text-slate-100">
-            Frontend Radio
+            {title}
           </h4>
-          <p className="text-slate-100 uppercase font-bold">Daily Mix</p>
+          <p className="text-slate-100 ">{description}</p>
           <div className="flex justify-end">
             <Button
               className={

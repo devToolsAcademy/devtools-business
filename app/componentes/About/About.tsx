@@ -1,6 +1,6 @@
 export const About = () => {
   return (
-    <section className="mt-10 p-3 flex flex-col justify-center items-center md:w-[70%] lg:w-[70%] lg:items-center">
+    <section id="home-aboutus" className="mt-10 p-3 flex flex-col justify-center items-center md:w-[70%] lg:w-[70%] lg:items-center">
       <h2 className="text-[var(--greenDevtools)] font-bold text-2xl self-center mb-5 lg:w-[100%] text-center items-center">
         Sobre nosotros
       </h2>
