@@ -15,7 +15,7 @@ export const Slider = () => {
   const services = [
     {
       image: "",
-      title: "DEISEÑO DE PÁGINAS WEB",
+      title: "DISEÑO DE PÁGINAS WEB",
       description: "Transformamos ideas en experiencias digitales cautivadoras en desarrollo personalizados para llevar tu presencia al siguiente nivel.",
       action: ""
     },
@@ -61,8 +61,8 @@ export const Slider = () => {
       scrollbar={{ draggable: true }}
       className="md:w-[40rem] w-[20rem] lg:w-[65rem] "
     >
-      {services?.map((service) => (
-        <SwiperSlide>
+      {services?.map((service, index) => (
+        <SwiperSlide key={index}>
           <CardServices title={service.title} description={service.description} />
         </SwiperSlide>
       ))}
