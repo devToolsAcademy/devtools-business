@@ -16,7 +16,7 @@ export const Slider = () => {
     {
       image: "",
       title: "DISEÑO DE PÁGINAS WEB",
-      description: "Transformamos ideas en experiencias digitales cautivadoras en desarrollo personalizados para llevar tu presencia al siguiente nivel.",
+      description: "Transformamos ideas en experiencias digitales cautivadora en desarrollo personalizados para llevar tu presencia al siguiente nivel.",
       action: ""
     },
     {
@@ -27,7 +27,7 @@ export const Slider = () => {
     },
     {
       image: "",
-      title: "DESARROLLO WEB",
+      title: "DESARROLLO DE PÁGINAS WEB",
       description: "Potenciamos la presencia digital de tu empresa con soluciones web personalizadas con  aplicaciones web a medida, diseñadas para impulsar tu negocio hacia el éxito en línea.",
       action: ""
     }

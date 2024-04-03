@@ -1,8 +1,7 @@
 import React from "react";
-import { Card, CardHeader, CardBody } from "@nextui-org/card";
+import { Card, CardBody } from "@nextui-org/card";
 import { Image } from "@nextui-org/image";
 import { Button } from "@nextui-org/button";
-import css from "styled-jsx/css";
 interface CardServicesInterface {
   title: string,
   description: string

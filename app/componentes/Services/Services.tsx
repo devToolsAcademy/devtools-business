@@ -1,4 +1,3 @@
-import React from "react";
 import CardServices from "./CardServices";
 import { Slider } from "./Slider";
 // import { Slider } from "./Slider";

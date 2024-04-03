@@ -15,7 +15,13 @@ module.exports = {
     "/app/componentes/**",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'blue-k': '#142C68',
+        'blue-d': '#04264C',
+        'green-l': '#BFE05F',
+      },
+    },
   },
   darkMode: "class",
   plugins: [nextui(), require("flowbite/plugin")],
