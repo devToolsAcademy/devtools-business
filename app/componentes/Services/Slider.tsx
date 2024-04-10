@@ -12,7 +12,26 @@ import { useEffect, useState } from "react";
 
 export const Slider = () => {
   const [slidesPerView, setSlidesPerView] = useState(1);
-
+  const services = [
+    {
+      image: "/images/diseñoPaginasWeb.jpeg",
+      title: "DISEÑO DE PÁGINAS WEB",
+      description: "Transformamos ideas en experiencias digitales cautivadora en desarrollo personalizados para llevar tu presencia al siguiente nivel.",
+      action: ""
+    },
+    {
+      image: "/images/desarrolloPaginasWeb.jpeg",
+      title: "DESARROLLO DE PÁGINAS WEB",
+      description: "Potenciamos la presencia digital de tu empresa con soluciones web personalizadas a tu medida, diseñadas para impulsar tu negocio hacia el éxito.",
+      action: ""
+    },
+    {
+      image: "/images/marketingDigital.jpeg",
+      title: "ASESORÍAS MARKETING DIGITAL",
+      description: "Ayudamos a impulsar tu marca hacia el éxito digital en redes sociales hasta campañas publicitarias, maximizamos tu alcance y crecimiento en línea.",
+      action: ""
+    }
+  ]
   useEffect(() => {
     const handleResize = () => {
       const windowWidth = window.innerWidth;
@@ -20,7 +39,7 @@ export const Slider = () => {
       if (windowWidth >= 1024) {
         setSlidesPerView(3);
       } else if (windowWidth >= 768) {
-        setSlidesPerView(2);
+        setSlidesPerView(3);
       } else {
         setSlidesPerView(1);
       }
@@ -40,29 +59,13 @@ export const Slider = () => {
       navigation
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
-      className="md:w-[40rem] w-[20rem] lg:w-[65rem] "
+      className="md:w-[45rem] w-[20rem] lg:w-[65rem] grid grid-cols-3 gap-3 "
     >
-      <SwiperSlide>
-        <CardServices />
-      </SwiperSlide>
-      <SwiperSlide>
-        <CardServices />
-      </SwiperSlide>
-      <SwiperSlide>
-        <CardServices />
-      </SwiperSlide>
-      <SwiperSlide>
-        <CardServices />
-      </SwiperSlide>
-      <SwiperSlide>
-        <CardServices />
-      </SwiperSlide>
-      <SwiperSlide>
-        <CardServices />
-      </SwiperSlide>
-      <SwiperSlide>
-        <CardServices />
-      </SwiperSlide>
+      {services?.map((service, index) => (
+        <SwiperSlide key={index}>
+          <CardServices title={service.title} description={service.description} image={service.image} />
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 };
