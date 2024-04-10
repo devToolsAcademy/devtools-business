@@ -2,28 +2,28 @@ import styles from "./About.module.css";
 
 export const About = () => {
   return (
-    <section  className="flex h-full" >
-      <div className="flex-1 h-full" id={`${styles['container-img']}`} >
-      <video
-        autoPlay
-        loop
-        muted
-        className="inset-10 w-[80%] h-[119%] object-cover z-0"
-      >
-        <source src="/videos/equipo.mp4" type="video/mp4" />       
-      </video>
+    <section className="flex h-full">
+      <div className="flex-1 h-full" id={`${styles["container-img"]}`}>
+        <video
+          autoPlay
+          loop
+          muted
+          className="inset-10 w-[80%] h-[120%] object-cover z-0"
+        >
+          <source src="/videos/equipo.mp4" type="video/mp4" />
+        </video>
       </div>
       <div className="flex-1 ml-2 flex flex-col justify-center  items-center text-center text-small">
-        <h2 className="text-[#ffbd59] font-bold text-2xl self-center mb-5 lg:w-[100%] text-center items-center mb-0 mt-2">
+        <h2 className="text-[#ffbd59] font-bold text-2xl self-center mb lg:w-[100%] text-center items-center mb-0 mt-4">
           Sobre nosotros
         </h2>
-        <hr className="border-t-4 border-[#ffbd59] mb-3 ml-2 w-[50%]"/>
-        <p className="mb-3">
-          En <span className="text-green-l font-bold">devTools</span>, nos emociona que hagas parte de nuestra
-          plataforma digital. Somos un equipo apasionado de profesionales
-          dedicados al mundo del desarrollo web y el marketing digital. Además
-          de nuestros servicios como empresa, también nos complace presentar
-          nuestro proyecto educativo.
+        <hr className="border-t-4 border-[#ffbd59] mb-3 ml-2 w-[50%] " />
+        <p className="mb-2">
+          En <span className="text-green-l font-bold">devTools</span>, nos
+          emociona que hagas parte de nuestra plataforma digital. Somos un
+          equipo apasionado de profesionales dedicados al mundo del desarrollo
+          web y el marketing digital. Además de nuestros servicios como empresa,
+          también nos complace presentar nuestro proyecto educativo.
         </p>
         <p className="mb-3">
           Nuestro promiso es ofrecer soluciones innovadoras y creativas para
