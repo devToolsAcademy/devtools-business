@@ -27,13 +27,13 @@ export const Team = () => {
             description: "Diseñadora Interactiva Actualmente estudiante en la Universidad EAFIT Habilidades en Illustrator, Photoshop, Canva y otras herramientas digitales."
         },
         {
-            image: "/images/WilliamSerna.jpeg",
+            image: "/images/fotoPerfil.jpg",
             name: "William Serna",
             job: "Commercial advisor",
             description: "Datos que puedan interesarle al usuario para generarle confianza y acompañamiento"
         },
         {
-            image: "",
+            image: "/images/fotoJohn1.jpeg",
             name: "Jhon Orozco",
             job: "Commercial advisor",
             description: "Datos que puedan interesarle al usuario para generarle confianza y acompañamiento"
@@ -43,15 +43,13 @@ export const Team = () => {
         <div className="bg-blue-k p-10">
             <h1 className="text-white text-3xl font-semibold ml-5">Nuestro equipo</h1>
             <hr className="border-t-4 border-green-l mb-3 ml-5 w-[45%]"/>
-            <div className="rounded-[30px]  grid grid-cols-3 gap-3 p-10 backdrop-blur-md bg-white/30 ">
+            <div className="rounded-[30px] grid grid-cols-3 gap-3 p-10 backdrop-blur-md bg-white/30 ">
                 {team.map((employee) => (
                     <div className="">
-                        {/* <div className="w-[159px] h-[159px]  overflow-hidden"> */}
-                        <Image src={employee?.image} alt={"employee-img"} className="h-40 w-full object-cover rounded-[30px] border-2 border-green-l" width={50} height={50} />
-                        {/* </div> */}
-                        <h1 className="text-xs text-white text-center font-semibold">{employee?.name}</h1>
-                        <h2 className="text-xs text-green-l text-center font-semibold ">{employee?.job}</h2>
-                        <h3 className="text-xs text-white text-center ">{employee?.description}</h3>
+                        <Image src={employee?.image} alt={"employee-img"} className="h-40 object-cover border-2 rounded-[30px]  border-green-l w-full" width={100} height={100} />
+                        <h1 className="text-xs text-white text-center font-semibold mt-4">{employee?.name}</h1>
+                        <h2 className="text-xs text-green-l text-center font-semibold mb-2">{employee?.job}</h2>
+                        <h3 className="text-xs text-white text-center mb-2">{employee?.description}</h3>
                     </div>
                 ))}
             </div>
