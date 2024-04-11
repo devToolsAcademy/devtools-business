@@ -15,15 +15,15 @@ export default function CardServices({
 }: CardServicesInterface) {
   return (
     <Card className="py-4 m-5 w-[90%] bg-transparent">
-      <CardBody className="overflow-visible py-2 h-[24rem] flex justify-between">
+      <CardBody className="overflow-visible py-2 h-[100%] flex justify-between">
         <Image
           isZoomed
           alt="Card background"
-          className="object-cover rounded-xl "
+          className="h-24 w-full object-cover"
           src={`${image}`}
           width={280}          
         />
-        <div className="pb-0 pt-2 px-4 ">
+        <div className="pb-0 pt-2 px-4">
           <h4 className="font-bold text-small text-center h-[3.5rem] text-green-l">
             {title}
           </h4>

@@ -7,13 +7,41 @@ export const Footer = () => {
       <p className="my-5 mx-10 font-bold text-2xl">CONTÁCTANOS</p>
 
       <div className="flex justify-around w-[100%] flex-nowrap">
-        <img src="/images/whatsapp.png" alt="Descripción de la imagen 1" className="w-[10%]" />
-        <img src="/images/instagram.png" alt="Descripción de la imagen 2" className="w-[10%]" />
-        <img src="/images/gitHub.png" alt="Descripción de la imagen 3" className="w-[10%]"/>
-        <img src="/images/linkedln.png" alt="Descripción de la imagen 4" className="w-[10%]"/>
-        <img src="/images/telegram.png" alt="Descripción de la imagen 5" className="w-[10%]" />
+        <a href="https://web.whatsapp.com/573116978993" className="w-[10%]">
+          <img src="/images/whatsapp.png" alt="whatsapp" />
+        </a>
+
+        <a href="https://www.instagram.com/devtoolsacademy/" className="w-[10%]">
+          <img src="/images/instagram.png" alt="instagram" />
+        </a>
+
+        <a href="https://www.facebook.com/profile.php?id=100091929195795" className="w-[10%]">
+          <img src="/images/facebook.png" alt="Facebook" />
+        </a>
+
+        <a href="https://github.com/devToolsAcademy" className="w-[10%]">
+          <img src="/images/gitHub.png" alt="gitHub" />
+        </a>
+
+        <a href="https://www.linkedin.com/school/devtoolsacademy/" className="w-[10%]">
+          <img src="/images/linkedln.png" alt="linkedln" />
+        </a>
+
+        <a href="" className="w-[10%]">
+          <img src="/images/telegram.png" alt="telegram" />
+        </a>
       </div>
-      <p className="my-5 mx-10 text-small">También puedes dejar un mensaje en nuestro correo:</p>
+      <span className="flex my-5 mx-10 text-small">
+        <p className=" ">
+          También puedes dejar un mensaje en nuestro correo:
+        </p>
+        <a
+          href="mailto:devtoolsbusinesspro@gmail.com"
+          className="text-blue-500 hover:underline "
+        >
+          devtoolsbusinesspro@gmail.com
+        </a>
+      </span>
     </section>
   );
 };

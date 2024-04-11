@@ -1,19 +1,17 @@
-import styles from "./About.module.css";
-
 export const About = () => {
   return (
-    <section className="flex h-full">
-      <div className="flex-1 h-full" id={`${styles["container-img"]}`}>
+    <section className="flex gap-10" id="home-aboutus">
+      <div className="flex-1 flex-grow pr-5">
         <video
           autoPlay
           loop
           muted
-          className="inset-10 w-[80%] h-[120%] object-cover z-0"
+          className="object-cover h-full"
         >
           <source src="/videos/equipo.mp4" type="video/mp4" />
         </video>
       </div>
-      <div className="flex-1 ml-2 flex flex-col justify-center  items-center text-center text-small">
+      <div className="flex-1 ml-2 flex flex-col justify-center items-center text-center text-small pr-5">
         <h2 className="text-[#ffbd59] font-bold text-2xl self-center mb lg:w-[100%] text-center items-center mb-0 mt-4">
           Sobre nosotros
         </h2>

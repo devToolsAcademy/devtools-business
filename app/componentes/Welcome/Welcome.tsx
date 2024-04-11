@@ -17,9 +17,9 @@ export const Welcome = () => {
         className={` md:flex md:justify-center
       ${styles["container-welcome"]} relative z-10`}
       >
-        <div className="md:w-[70%] md:flex items-center">
+        <div className="md:w-[70%] md:flex items-center ">
           <img
-            src="/assesst/Isotipo.svg"
+            src="/assesst/isotipofondotransparente.png"
             alt=""
             className="w-[200px] h-[200px] md:block"
           />
@@ -35,6 +35,11 @@ export const Welcome = () => {
           </div>
         </div>
         <ArrowDown className="absolute self-end w-[100%] transition-all hover:cursor-pointer float-right animate-bounce hidden md:block mb-4 text-[var(--greenDevtools)]" />
+        <div className="fixed bottom-10 right-5">
+      <a href="https://web.whatsapp.com/573116978993" >
+        <img src="/images/whatsapp.png" alt="WhatsApp" className="h-10 w-10 " />
+      </a>
+    </div>
       </section>
     </div>
   );

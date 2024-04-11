@@ -3,7 +3,7 @@ export const Slogan = () => {
     <section className="h-[80vh] w-full relative">
         <video
           className="absolute inset-0 w-full h-full object-cover z-0"
-          src="/videos/Slogan.mp4"
+          src="/videos/Slogan1.mp4"
           autoPlay
           loop
           muted
@@ -15,7 +15,7 @@ export const Slogan = () => {
           </h1>
 
             <img
-              src="/assesst/Isotipo.svg"
+              src="/assesst/isotipofondotransparente.png"
               alt=""
               className="w-[100px] h-[200px] md:block self-end"
             />
