@@ -1,7 +1,6 @@
 import React from "react";
-import { Card, CardBody } from "@nextui-org/card";
-import { Image } from "@nextui-org/image";
-import { Button } from "@nextui-org/button";
+import {Card, CardHeader, CardBody, Image} from "@nextui-org/react";
+
 interface CardServicesInterface {
   title: string;
   description: string;
@@ -14,20 +13,22 @@ export default function CardServices({
   image,
 }: CardServicesInterface) {
   return (
-    <Card className="py-4 m-5 sm:w-[90%] lg:w-[80%] bg-transparent">
-      <CardBody className="overflow-visible py-2 h-[100%] flex justify-between">
+    <Card className="py-4 m-5 bg-transparent ">
+      <CardHeader className="w-full overflow-visible py-2 flex justify-center">
         <Image
           isZoomed
-          alt="Card background"
-          className="h-24 w-full object-cover"
+          alt="Card-service"
+          className="object-cover h-[7rem] w-[8rem] md:w-[12rem] xl:w-[16rem] xl:h-[12rem] 2xl:w-[18rem]"
           src={`${image}`}
-          width={280}          
+
         />
+      </CardHeader>
+      <CardBody className="overflow-visible py-2 flex-col">
         <div className="pb-0 pt-2 px-4">
-          <h4 className="font-bold text-small text-center h-[3.5rem] text-green-l">
+          <h4 className="font-bold text-small text-center h-[3rem] text-green-l">
             {title}
           </h4>
-          <p className="text-slate-100 text-small text-center h-[9rem]">
+          <p className="text-slate-100 text-xs xl:text-sm text-center h-[5rem] xl:h-[7rem] 2xl:h-[5rem]">
             {description}
           </p>
           <div className="flex justify-center my-4 ">
@@ -35,7 +36,7 @@ export default function CardServices({
               href="https://web.whatsapp.com/573116978993"
               target="_blank"
               className={
-                "py-2 px-4 bg-[var(--bluePrimary)] text-slate-50 font-bold hover:bg-transparent hover:border-solid hover:border-2 hover:border-[var(--greenDevtools)] hover:text-[var(--greenDevtools)] rounded-full"
+                "text-sm lg:text-base xl:text-lg py-2 px-4 bg-[var(--bluePrimary)] text-slate-50 font-bold hover:bg-transparent hover:border-solid hover:border-2 hover:border-[var(--greenDevtools)] hover:text-[var(--greenDevtools)] rounded-full"
               }
             >
               Saber más

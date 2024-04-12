@@ -26,7 +26,7 @@ export default function Menu({showStartSesion=false}) {
         />
         <NavbarBrand>
           {/* <AcmeLogo /> */}
-          <p className="  text-[var(--greenDevtools)] font-bold">devTools</p>
+          <p className="text-xl md:text-2xl xl:text-3xl text-[var(--greenDevtools)] font-bold">devTools</p>
         </NavbarBrand>
       </NavbarContent>
 
