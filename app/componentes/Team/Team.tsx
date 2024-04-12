@@ -43,7 +43,7 @@ export const Team = () => {
         <div className="bg-blue-k p-10">
             <h1 className="text-white text-3xl font-semibold ml-5">Nuestro equipo</h1>
             <hr className="border-t-4 border-green-l mb-3 ml-5 w-[45%]"/>
-            <div className="rounded-[30px] grid grid-cols-3 gap-3 p-10 backdrop-blur-md bg-white/30 ">
+            <div className="rounded-[30px] grid sm:grid-cols-3 gap-3 p-10 backdrop-blur-md bg-white/30 ">
                 {team.map((employee) => (
                     <div className="">
                         <Image src={employee?.image} alt={"employee-img"} className="h-40 object-cover border-2 rounded-[30px]  border-green-l w-full" width={100} height={100} />
