@@ -14,7 +14,7 @@ export default function CardServices({
   image,
 }: CardServicesInterface) {
   return (
-    <Card className="py-4 m-5 w-[90%] md:w-[70%] bg-transparent">
+    <Card className="py-4 m-5 sm:w-[90%] lg:w-[80%] bg-transparent">
       <CardBody className="overflow-visible py-2 h-[100%] flex justify-between">
         <Image
           isZoomed
