@@ -3,7 +3,11 @@ import { Metadata } from "next";
 import { Providers } from "./providers";
 
 export const metadata: Metadata = {
-  description: "titile",
+  description: "DevTools",
+  title: "devTools",
+  icons: {
+    shortcut: "/assesst/Isotipo.svg",
+  },
 };
 
 export default function RootLayout({
@@ -13,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head />
+      <head></head>
       <body>
         <Providers>{children}</Providers>
       </body>

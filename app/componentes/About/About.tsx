@@ -2,18 +2,18 @@ import styles from "./About.module.css";
 
 export const About = () => {
   return (
-    <section className="flex h-full">
-      <div className="flex-1 h-full" id={`${styles["container-img"]}`}>
+    <section className="flex flex-col sm:flex-row sm:gap-10" id="home-aboutus">
+      <div className="flex-1 flex-grow sm:pr-5">
         <video
           autoPlay
           loop
           muted
-          className="inset-10 w-[80%] h-[120%] object-cover z-0"
+          className="object-cover h-full"
         >
           <source src="/videos/equipo.mp4" type="video/mp4" />
         </video>
       </div>
-      <div className="flex-1 ml-2 flex flex-col justify-center  items-center text-center text-small">
+      <div className="flex-1 ml-2 flex flex-col justify-center items-center text-center text-small sm:pr-5">
         <h2 className="text-[#ffbd59] font-bold text-2xl self-center mb lg:w-[100%] text-center items-center mb-0 mt-4">
           Sobre nosotros
         </h2>
@@ -26,11 +26,11 @@ export const About = () => {
           también nos complace presentar nuestro proyecto educativo.
         </p>
         <p className="mb-3">
-          Nuestro promiso es ofrecer soluciones innovadoras y creativas para
+          Nuestro compromiso es ofrecer soluciones innovadoras y creativas para
           satisfacer las necesidades únicas de nuestros clientes. Ya sea que
           estén buscando crear una presencia en línea impactante, aumentar su
           visibilidad en el mercado digital o desarrollar aplicaciones web
-          personalizadas, estamos aquí para ayudar.{" "}
+          personalizadas, estamos para ayudar.{" "}
         </p>
         <p className="mb-3">
           Nos hemos embarcado en una misión para formar a la próxima generación
