@@ -13,7 +13,7 @@ export const About = () => {
           <source src="/videos/equipo.mp4" type="video/mp4" />
         </video>
       </div>
-      <div className="flex-1 ml-2 flex flex-col justify-center items-center text-center text-xs xl:text-sm sm:pr-5">
+      <div className="flex-1 ml-2 flex flex-col justify-center items-center text-center text-xs lg:text-sm 2xl:text-base sm:pr-5">
         <h2 className="text-[#ffbd59] font-bold text-2xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-6xl self-center mb lg:w-[100%] text-center items-center mb-0 mt-4">
           Sobre nosotros
         </h2>

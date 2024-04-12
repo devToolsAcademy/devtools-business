@@ -28,7 +28,7 @@ export default function CardServices({
           <h4 className="font-bold text-small text-center h-[3rem] text-green-l">
             {title}
           </h4>
-          <p className="text-slate-100 text-xs xl:text-sm text-center h-[5rem] xl:h-[7rem] 2xl:h-[5rem]">
+          <p className="text-slate-100 text-xs lg:text-sm 2xl:text-base text-center h-[5rem] xl:h-[7rem] 2xl:h-[5rem]">
             {description}
           </p>
           <div className="flex justify-center my-4 ">

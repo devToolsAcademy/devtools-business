@@ -20,7 +20,7 @@ export const Footer = () => {
         </a>
 
         <a href="https://github.com/devToolsAcademy" className="w-[8%]" target="_blank">
-          <img src="/images/gitHub.png" alt="gitHub" />
+          <img src="/images/github.png" alt="gitHub" />
         </a>
 
         <a href="https://www.linkedin.com/school/devtoolsacademy/" className="w-[8%]" target="_blank">
