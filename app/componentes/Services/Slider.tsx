@@ -39,7 +39,7 @@ export const Slider = () => {
       if (windowWidth >= 1024) {
         setSlidesPerView(3);
       } else if (windowWidth >= 768) {
-        setSlidesPerView(3);
+        setSlidesPerView(2);
       } else {
         setSlidesPerView(1);
       }
@@ -59,7 +59,7 @@ export const Slider = () => {
       navigation
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
-      className="md:w-[45rem] w-[20rem] lg:w-[65rem] grid grid-cols-3 gap-3 "
+      className="w-[90%] xl:w-[70%] 2xl:w-[60%] gap-2"
     >
       {services?.map((service, index) => (
         <SwiperSlide key={index}>

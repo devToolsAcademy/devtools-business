@@ -2,7 +2,7 @@ import styles from "./About.module.css";
 
 export const About = () => {
   return (
-    <section className="flex flex-col sm:flex-row sm:gap-10" id="home-aboutus">
+    <section className="flex flex-col sm:flex-row sm:gap-10 md:w-[90%] " id="home-aboutus">
       <div className="flex-1 flex-grow sm:pr-5">
         <video
           autoPlay
@@ -13,8 +13,8 @@ export const About = () => {
           <source src="/videos/equipo.mp4" type="video/mp4" />
         </video>
       </div>
-      <div className="flex-1 ml-2 flex flex-col justify-center items-center text-center text-small sm:pr-5">
-        <h2 className="text-[#ffbd59] font-bold text-2xl self-center mb lg:w-[100%] text-center items-center mb-0 mt-4">
+      <div className="flex-1 ml-2 flex flex-col justify-center items-center text-center text-xs xl:text-sm sm:pr-5">
+        <h2 className="text-[#ffbd59] font-bold text-2xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-6xl self-center mb lg:w-[100%] text-center items-center mb-0 mt-4">
           Sobre nosotros
         </h2>
         <hr className="border-t-4 border-[#ffbd59] mb-3 ml-2 w-[50%] " />
@@ -32,7 +32,7 @@ export const About = () => {
           visibilidad en el mercado digital o desarrollar aplicaciones web
           personalizadas, estamos para ayudar.{" "}
         </p>
-        <p className="mb-3">
+        <p className="mb-5">
           Nos hemos embarcado en una misión para formar a la próxima generación
           de profesionales en el campo del desarrollo web. Con programas de
           formación estructurados, estamos comprometidos a compartir nuestro
