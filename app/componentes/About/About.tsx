@@ -1,3 +1,5 @@
+import styles from "./About.module.css";
+
 export const About = () => {
   return (
     <section className="flex flex-col sm:flex-row sm:gap-10" id="home-aboutus">
