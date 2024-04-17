@@ -12,13 +12,13 @@ export const Team = () => {
             image: "/images/DanielMayo.jpeg",
             name: "Daniel Mayo",
             job: "Web UI Developer",
-            description: "Datos que puedan interesarle al usuario para generarle confianza y acompañamiento"
+            description: "Soy un apasionado desarrollador con experiencia como Full-Stack. Mi enfoque versátil me ha permitido trabajar en una variedad de proyectos."
         },
         {
-            image: "/images/LuisRuiz.jpeg",
+            image: "/images/LuisRuiz1.jpeg",
             name: "Luis Ruiz",
             job: "Full stack developer",
-            description: "Datos que puedan interesarle al usuario para generarle confianza y acompañamiento"
+            description: "Desarrollador full stack apasionado por la creación de soluciones tecnológicas innovadoras y escalables."
         },
         {
             image: "/images/YoselinAlvarez.jpeg",
@@ -27,16 +27,16 @@ export const Team = () => {
             description: "Diseñadora Interactiva Actualmente estudiante en la Universidad EAFIT Habilidades en Illustrator, Photoshop, Canva y otras herramientas digitales."
         },
         {
-            image: "/images/fotoPerfil.jpg",
+            image: "/images/williamSerna3.jpeg",
             name: "William Serna",
             job: "Commercial advisor",
-            description: "Datos que puedan interesarle al usuario para generarle confianza y acompañamiento"
+            description: "Commercial advisor con experiencia en ventas y análisis de mercado. Desarrollador full stack comprometido con soluciones innovadoras para satisfacer al cliente."
         },
         {
             image: "/images/fotoJohn1.jpeg",
             name: "Jhon Orozco",
             job: "Commercial advisor",
-            description: "Datos que puedan interesarle al usuario para generarle confianza y acompañamiento"
+            description: "Profesional en Marketing, con experiencia en el desarrollo de estrategias y tácticas para construir negocios sostenibles en múltiples categorías."
         }
     ]
     return (
