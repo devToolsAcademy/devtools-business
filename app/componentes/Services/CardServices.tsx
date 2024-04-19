@@ -33,7 +33,7 @@ export default function CardServices({
           </p>
           <div className="flex justify-center my-4 ">
             <a
-              href="https://web.whatsapp.com/573116978993"
+              href="https://web.whatsapp.com/send?phone=573116978993"
               target="_blank"
               className={
                 "text-sm lg:text-base xl:text-lg py-2 px-4 bg-[var(--bluePrimary)] text-slate-50 font-bold hover:bg-transparent hover:border-solid hover:border-2 hover:border-[var(--greenDevtools)] hover:text-[var(--greenDevtools)] rounded-full"

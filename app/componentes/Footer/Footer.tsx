@@ -7,7 +7,7 @@ export const Footer = () => {
       <p className="text-left my-5 mx-10 font-bold text-2xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-6xl">CONTÁCTANOS</p>
 
       <div className="flex justify-around w-[100%] flex-nowrap w-[80%] self-center">
-        <a href="https://web.whatsapp.com/573116978993" className="w-[8%]" target="_blank">
+        <a href="https://web.whatsapp.com/send?phone=573116978993" className="w-[8%]" target="_blank">
           <img src="/images/whatsapp.png" alt="whatsapp" />
         </a>
 

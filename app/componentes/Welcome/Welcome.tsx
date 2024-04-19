@@ -37,7 +37,7 @@ export const Welcome = () => {
         </div>
         <ArrowDown className="absolute self-end w-[100%] transition-all hover:cursor-pointer float-right animate-bounce hidden md:block mb-4 text-[var(--greenDevtools)]" />
         <div className="fixed bottom-10 right-5">
-          <a href="https://web.whatsapp.com/573116978993" target="_blank">
+          <a href="https://web.whatsapp.com/send?phone=573116978993" target="_blank">
             <img
               src="/images/whatsapp.png"
               alt="WhatsApp"
