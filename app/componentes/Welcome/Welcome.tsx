@@ -1,3 +1,5 @@
+"use client";
+import { handleWhatsappLink } from "@/utils/helper";
 import ArrowDown from "../assessment/icons/ArrowDown";
 
 export const Welcome = () => {
@@ -35,9 +37,9 @@ export const Welcome = () => {
             </p>
           </div>
         </div>
-        <ArrowDown className="absolute self-end w-[100%] transition-all hover:cursor-pointer float-right animate-bounce hidden md:block mb-4 text-[var(--greenDevtools)]" />
+        <ArrowDown className="absolute self-end w-[100%] transition-all hover:cursor-pointer float-right animate-bounce hidden md:block mb-4 text-[var(--greenDevtools)] rounded-full" />
         <div className="fixed bottom-10 right-5">
-          <a href="https://web.whatsapp.com/send?phone=573116978993" target="_blank">
+          <a onClick={handleWhatsappLink} target="_blank">
             <img
               src="/images/whatsapp.png"
               alt="WhatsApp"
