@@ -1,5 +1,7 @@
+"use client";
+import { handleWhatsappLink } from "@/utils/helper";
 import React from "react";
-import {Card, CardHeader, CardBody, Image} from "@nextui-org/react";
+import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
 
 interface CardServicesInterface {
   title: string;
@@ -20,7 +22,6 @@ export default function CardServices({
           alt="Card-service"
           className="object-cover h-[7rem] w-[8rem] md:w-[12rem] xl:w-[16rem] xl:h-[12rem] 2xl:w-[18rem]"
           src={`${image}`}
-
         />
       </CardHeader>
       <CardBody className="overflow-visible py-2 flex-col">
@@ -33,7 +34,7 @@ export default function CardServices({
           </p>
           <div className="flex justify-center my-4 ">
             <a
-              href="https://web.whatsapp.com/send?phone=573116978993"
+              onClick={handleWhatsappLink}
               target="_blank"
               className={
                 "text-sm lg:text-base xl:text-lg py-2 px-4 bg-[var(--bluePrimary)] text-slate-50 font-bold hover:bg-transparent hover:border-solid hover:border-2 hover:border-[var(--greenDevtools)] hover:text-[var(--greenDevtools)] rounded-full"
