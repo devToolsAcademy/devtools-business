@@ -46,7 +46,7 @@ export const Team = () => {
             <div className="rounded-[30px] grid sm:grid-cols-3 gap-3 p-10 backdrop-blur-md bg-white/30 ">
                 {team.map((employee, index) => (
                     <div className="flex flex-col items-center" key={index}>
-                        <Image src={employee?.image} alt={"employee-img"} className="h-40 w-full max-w-[20rem] xl:h-[14rem] object-cover border-2 rounded-[30px] border-green-l " width={100} height={100} />
+                        <Image src={employee?.image} alt={"employee-img"} unoptimized className="h-40 w-full max-w-[20rem] xl:h-[14rem] object-cover border-2 rounded-[30px] border-green-l " width={100} height={100} />
                         <h1 className="text-xs lg:text-sm 2xl:text-base text-white text-center font-semibold mt-4">{employee?.name}</h1>
                         <h2 className="text-xs lg:text-sm 2xl:text-base text-green-l text-center font-semibold mb-2">{employee?.job}</h2>
                         <h3 className="text-xs lg:text-sm 2xl:text-base text-white text-center mb-2">{employee?.description}</h3>
