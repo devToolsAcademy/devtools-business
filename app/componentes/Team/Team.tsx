@@ -3,37 +3,37 @@ import Image from "next/image"
 export const Team = () => {
     const team = [
         {
-            image: "/images/HeidyFlorez.jpeg",
+            image: "https://dgpi9g6k6hezi.cloudfront.net/HeidyFlorez1.jpeg",
             name: "Heidy Flórez",
             job: "Web UI Developer",
             description: "Desarrolladora front-end especializada en la creación de sitios web, experiencia en AWS, DevOps y metodologías ágiles."
         },
         {
-            image: "/images/DanielMayo.jpeg",
+            image: "https://dgpi9g6k6hezi.cloudfront.net/DanielMayo.jpeg",
             name: "Daniel Mayo",
             job: "Web UI Developer",
             description: "Soy un apasionado desarrollador con experiencia como Full-Stack. Mi enfoque versátil me ha permitido trabajar en una variedad de proyectos."
         },
         {
-            image: "/images/LuisRuiz1.jpeg",
+            image: "https://dgpi9g6k6hezi.cloudfront.net/LuisRuiz.jpeg",
             name: "Luis Ruiz",
             job: "Full stack developer",
             description: "Desarrollador full stack apasionado por la creación de soluciones tecnológicas innovadoras y escalables."
         },
         {
-            image: "/images/YoselinAlvarez.jpeg",
+            image: "https://dgpi9g6k6hezi.cloudfront.net/YoselinAlvarez.jpeg",
             name: "Yoselin Alvarez",
             job: "Interactive Designer",
             description: "Diseñadora Interactiva Actualmente estudiante en la Universidad EAFIT Habilidades en Illustrator, Photoshop, Canva y otras herramientas digitales."
         },
         {
-            image: "/images/williamSerna3.jpeg",
+            image: "https://dgpi9g6k6hezi.cloudfront.net/williamSerna3.jpeg",
             name: "William Serna",
             job: "Commercial advisor",
             description: "Commercial advisor con experiencia en ventas y análisis de mercado. Desarrollador full stack comprometido con soluciones innovadoras para satisfacer al cliente."
         },
         {
-            image: "/images/fotoJohn1.jpeg",
+            image: "https://dgpi9g6k6hezi.cloudfront.net/fotoJohn1.jpeg",
             name: "Jhon Orozco",
             job: "Commercial advisor",
             description: "Profesional en Marketing, con experiencia en el desarrollo de estrategias y tácticas para construir negocios sostenibles en múltiples categorías."
